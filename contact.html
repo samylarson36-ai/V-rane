@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Start a project | Atelier Vérane</title>
+<meta name="description" content="Tell Atelier Vérane about your site, your brief and your timing. We reply within two working days.">
+<meta name="theme-color" content="#F1EFE9">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="contact">
+
+<header class="nav">
+  <a class="logo" href="index.html" aria-label="Atelier Vérane home">
+    <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="1.5" y="1.5" width="27" height="27" fill="none" stroke="currentColor" stroke-width="3"/><path d="M9 28V16a6 6 0 0 1 12 0v12" fill="#4F6048" stroke="currentColor" stroke-width="3"/></svg>
+    <span>atelier vérane</span>
+  </a>
+  <nav id="menu" aria-label="Main">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#studio">Studio</a>
+    <a href="contact.html" class="pill" aria-current="page">Start a project</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</header>
+
+<main class="ct">
+  <div class="ct-intro">
+    <h1>Tell us about your project.</h1>
+    <p>A few lines is enough. Where is the site, what do you hope to build, and when would you like to move in? We reply within two working days.</p>
+    <address>
+      <b>Studio</b>22 rue des Imprimeurs<br>69002 Lyon, France<br><br>
+      <b>Write</b><a href="mailto:studio@atelier-verane.com">studio@atelier-verane.com</a><br><br>
+      <b>Call</b>+33 4 78 00 12 34<br>Monday to Friday, 9:00 to 18:00
+    </address>
+  </div>
+
+  <form class="ct-form" id="contactForm" data-endpoint="https://formspree.io/f/myewbejj" novalidate>
+    <label>Your name<input name="name" required autocomplete="name"></label>
+    <label>Email<input name="email" type="email" required autocomplete="email"></label>
+    <div class="two">
+      <label>Type of project
+        <select name="type"><option>New house</option><option>Extension or renovation</option><option>Public or cultural building</option><option>Workplace or interior</option><option>Not sure yet</option></select>
+      </label>
+      <label>Budget range
+        <select name="budget"><option>Under 250k</option><option>250k to 750k</option><option>750k to 2M</option><option>Over 2M</option><option>To be defined</option></select>
+      </label>
+    </div>
+    <label>About the project<textarea name="message" rows="6" required placeholder="The site, the brief, the timing..."></textarea></label>
+    <label class="trap" aria-hidden="true">Leave empty<input name="botcheck" tabindex="-1" autocomplete="off"></label>
+    <button class="submit" type="submit">Send message</button>
+    <p class="msg" role="status" aria-live="polite"></p>
+  </form>
+</main>
+
+<footer class="foot">
+  <span>Atelier Vérane</span>
+  <span>22 rue des Imprimeurs, 69002 Lyon</span>
+  <span>studio@atelier-verane.com</span>
+  <span class="note">Concept project. Names and works are fictional.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

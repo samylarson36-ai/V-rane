@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atelier Vérane: architecture and interiors</title>
+<meta name="description" content="Atelier Vérane is an architecture and interiors studio designing homes, public buildings and workplaces that improve with age.">
+<meta property="og:title" content="Atelier Vérane: architecture and interiors">
+<meta property="og:description" content="Homes, halls and workplaces that improve with age.">
+<meta name="theme-color" content="#F1EFE9">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+
+<header class="nav">
+  <a class="logo" href="index.html" aria-label="Atelier Vérane home">
+    <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="1.5" y="1.5" width="27" height="27" fill="none" stroke="currentColor" stroke-width="3"/><path d="M9 28V16a6 6 0 0 1 12 0v12" fill="#4F6048" stroke="currentColor" stroke-width="3"/></svg>
+    <span>atelier vérane</span>
+  </a>
+  <nav id="menu" aria-label="Main">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#studio">Studio</a>
+    <a href="contact.html" class="pill">Start a project</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>We design houses, halls and workplaces that get better with age.</h1>
+    <div class="skyline" id="skyline" role="img" aria-label="Line elevations of three Atelier Vérane buildings: a house, a tower and a pavilion"></div>
+  </section>
+
+  <section class="sec" id="work">
+    <div class="sec-top">
+      <h2>Selected work</h2>
+      <div class="chips" id="chips" role="group" aria-label="Filter projects">
+        <button class="on" data-f="all">All</button><button data-f="Housing">Housing</button><button data-f="Cultural">Cultural</button><button data-f="Workspace">Workspace</button>
+      </div>
+    </div>
+    <div class="list" id="list"></div>
+  </section>
+
+  <section class="sec studio" id="studio">
+    <p class="statement">Our studio is fourteen people in a former printing works. We draw by hand first, build models for every project, and visit each site more often than the schedule asks us to.</p>
+    <div class="cols">
+      <div><h3>Architecture</h3><p>New buildings and extensions, from a single family house to a thirty-unit residential block. We lead the project from first sketch to the last snag list.</p></div>
+      <div><h3>Interiors</h3><p>Spaces fitted around the way people really work and live, with custom joinery, honest materials and light that changes through the day.</p></div>
+      <div><h3>Reuse</h3><p>Old factories, barns and offices given a second life. We keep what still works and add only what the building needs.</p></div>
+    </div>
+    <dl class="facts">
+      <div><dt>Founded</dt><dd>2014</dd></div>
+      <div><dt>Built projects</dt><dd>52</dd></div>
+      <div><dt>People</dt><dd>14</dd></div>
+      <div><dt>Awards</dt><dd>9</dd></div>
+    </dl>
+
+    <h3 class="team-h">People you will work with</h3>
+    <ul class="team">
+      <li><svg viewBox="0 0 80 80" aria-hidden="true"><circle cx="40" cy="40" r="38" fill="#4F6048"/><circle cx="40" cy="34" r="12" fill="#F1EFE9"/></svg><b>Inès Vérane</b><span>Founding architect</span></li>
+      <li><svg viewBox="0 0 80 80" aria-hidden="true"><rect width="80" height="80" fill="#DEDACF"/><path d="M0 80V40a40 40 0 0 1 80 0v40z" fill="#1E2023"/></svg><b>Tomás Reyes</b><span>Associate, housing</span></li>
+      <li><svg viewBox="0 0 80 80" aria-hidden="true"><rect width="80" height="80" fill="#1E2023"/><path d="M0 80L80 0v80z" fill="#F1EFE9"/></svg><b>Naomi Adeyemi</b><span>Head of interiors</span></li>
+      <li><svg viewBox="0 0 80 80" aria-hidden="true"><rect width="80" height="80" fill="#F1EFE9" stroke="#1E2023" stroke-width="2"/><circle cx="40" cy="40" r="22" fill="#4F6048"/><rect x="40" y="18" width="22" height="44" fill="#DEDACF"/></svg><b>Luc Marchand</b><span>Site and delivery</span></li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    <h2>Have a site, a building or just a feeling?</h2>
+    <a class="big-link" href="contact.html">Tell us about it</a>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>Atelier Vérane</span>
+  <span>22 rue des Imprimeurs, 69002 Lyon</span>
+  <span>studio@atelier-verane.com</span>
+  <span class="note">Concept project. Names and works are fictional.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Project | Atelier Vérane</title>
+<meta name="description" content="A project by Atelier Vérane, architecture and interiors studio.">
+<meta name="theme-color" content="#F1EFE9">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="proj">
+
+<header class="nav">
+  <a class="logo" href="index.html" aria-label="Atelier Vérane home">
+    <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect x="1.5" y="1.5" width="27" height="27" fill="none" stroke="currentColor" stroke-width="3"/><path d="M9 28V16a6 6 0 0 1 12 0v12" fill="#4F6048" stroke="currentColor" stroke-width="3"/></svg>
+    <span>atelier vérane</span>
+  </a>
+  <nav id="menu" aria-label="Main">
+    <a href="index.html#work">Work</a>
+    <a href="index.html#studio">Studio</a>
+    <a href="contact.html" class="pill">Start a project</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+</header>
+
+<main id="project" class="pj">
+  <p class="back"><a href="index.html#work">Back to all work</a></p>
+  <h1 id="pName">Loading project</h1>
+  <p class="pj-sub" id="pSub"></p>
+  <div class="pj-art" id="pArt" role="img" aria-label="Elevation drawing of the project"></div>
+  <dl class="meta" id="pMeta"></dl>
+  <div class="pj-text" id="pText"></div>
+  <a class="next" id="pNext" href="index.html#work"></a>
+</main>
+
+<footer class="foot">
+  <span>Atelier Vérane</span>
+  <span>22 rue des Imprimeurs, 69002 Lyon</span>
+  <span>studio@atelier-verane.com</span>
+  <span class="note">Concept project. Names and works are fictional.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
